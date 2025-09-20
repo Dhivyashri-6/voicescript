@@ -1,0 +1,213 @@
+/* Navigation Bar Styling */
+nav {
+  width: 100%;
+  background-color: #2c3e50; /* Deep blue-grey */
+  color: #ecf0f1; /* Light grey */
+  padding: 15px 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: bold;
+  color: #ecf0f1; /* Light grey */
+  letter-spacing: 1px; /* Slightly spaced letters */
+}
+
+/* Adjust container position to avoid overlap with the nav bar */
+.container {
+  margin-top: 80px;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f6f7; /* Light grey-blue background */
+  color: #2c3e50; /* Deep blue-grey */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #ffffff; /* White background */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #34495e; /* Darker blue-grey */
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+form {
+  background-color: #ecf0f1; /* Light grey */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  font-size: 1rem;
+  color: #2c3e50; /* Deep blue-grey */
+  margin-bottom: 8px;
+  text-align: left;
+  width: 100%;
+}
+
+form input[type="file"],
+form select,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #bdc3c7; /* Light grey border */
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #34495e; /* Darker blue-grey */
+  transition: all 0.3s ease;
+}
+
+form input[type="file"]:hover,
+form select:hover,
+form button:hover {
+  border-color: #2c3e50; /* Deep blue-grey border */
+}
+
+form button {
+  background-color: #3498db; /* Blue */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #2980b9; /* Darker blue */
+}
+
+#results {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ecf0f1; /* Light grey */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#results h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #34495e; /* Darker blue-grey */
+}
+
+#results p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #7f8c8d; /* Medium grey */
+}
+
+#downloadLink,
+#readTranslation {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #3498db; /* Blue */
+  transition: all 0.3s ease;
+}
+
+#downloadLink:hover,
+#readTranslation:hover {
+  background-color: #2980b9; /* Darker blue */
+}
+
+/* Start Recording Button */
+#startRecord {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #2ecc71; /* Green */
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#startRecord:hover {
+  background-color: #27ae60; /* Darker green */
+  transform: scale(1.05);
+}
+
+#startRecord:disabled {
+  background-color: #a2d9ce; /* Soft green */
+  cursor: not-allowed;
+}
+
+/* Stop Recording Button */
+#stopRecord {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #e74c3c; /* Red */
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#stopRecord:hover {
+  background-color: #c0392b; /* Darker red */
+  transform: scale(1.05);
+
+}
+
+#stopRecord:disabled {
+  background-color: #f5b7b1; /* Soft red */
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
