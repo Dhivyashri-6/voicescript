@@ -1,0 +1,5 @@
+Flask==3.0.0
+pydub==0.25.1
+SpeechRecognition==3.10.0
+googletrans==4.0.0-rc1
+gunicorn==21.2.0
