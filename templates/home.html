@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to Voice Script</title>
-  <link rel="stylesheet" href="static/home-style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='home-style.css') }}">
   <link rel="icon" href="https://th.bing.com/th/id/OIP.rL_rED1XSv-5uSqxR7_ZUgHaHa?w=178&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
 </head>
 <body>
@@ -54,6 +54,6 @@
     <p>&copy; 2025 Voice Script. All rights reserved.</p>
   </footer>
 
-  <script src="static/home-script.js"></script>
+  <script src="{{ url_for('static', filename='home-script.js') }}"></script>
 </body>
 </html>

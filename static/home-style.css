@@ -53,7 +53,7 @@
   /* Hero Section */
   .hero {
     text-align: center;
-    background: linear-gradient(to right, #3498db, #2ecc71), url('static//images//sample.jpg'); /* Update the path to your image here */
+    background: linear-gradient(to right, #3498db, #2ecc71), url('images/sample.jpg'); /* Update the path to your image here */
     background-size: cover;
     background-position: center;
     color: white;
